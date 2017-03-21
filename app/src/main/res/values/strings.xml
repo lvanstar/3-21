@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">女神派</string>
+    <string name="title_activity_product_details">ProductDetailsActivity</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_header_last_time">最后更新时间 : </string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载中\u2026</string>
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_set_up">SetUpActivity</string>
+    <string name="title_activity_address">AddressActivity</string>
+    <string name="title_activity_update_address">UpdateAddressActivity</string>
+    <string name="title_activity_verification_old_phone">VerificationOldPhone</string>
+    <string name="title_activity_replace_phone">ReplacePhoneActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_bin_ding_phone_num">BinDingPhoneNumActivity</string>
+    <string name="title_activity_user_message">UserMessageActivity</string>
+    <string name="title_activity_appointment">AppointmentActivity</string>
+    <string name="title_activity_appointment_record">AppointmentRecordActivity</string>
+    <string name="title_activity_appointment_time">AppointmentTimeActivity</string>
+    <string name="title_activity_appointment_record_details">AppointmentRecordDetailsActivity
+    </string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <string name="scan_text">请扫描快递提供的面单条码</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_member">MemberActivity</string>
+    <string name="title_activity_integral">IntegralActivity</string>
+    <string name="title_activity_sign">SignActivity</string>
+    <string name="title_activity_membership_card">MembershipCardActivity</string>
+    <string name="title_activity_member_card">MemberCardActivity</string>
+    <string name="title_activity_pay_order">PayOrderActivity</string>
+    <string name="title_activity_pay_result">PayResultActivity</string>
+    <string name="title_activity_coupon">CouponActivity</string>
+    <string name="title_activity_deposit">DepositActivity</string>
+    <string name="title_activity_my_wallet">MyWalletActivity</string>
+    <string name="title_activity_my_card">MyCardActivity</string>
+    <string name="title_activity_use_details">UseDetailsActivity</string>
+    <string name="title_activity_old_coupon">OldCouponActivity</string>
+    <string name="title_activity_selete_coupon">SeleteCoupon</string>
+    <string name="title_activity_confirm_card_order">ConfirmCardOrderActivity</string>
+    <string name="title_activity_renew_card">RenewCardActivity</string>
+    <string name="title_activity_all_privileges">AllPrivilegesActivity</string>
+    <string name="title_activity_circle_friends">CircleFriendsActivity</string>
+    <string name="title_activity_evaluate_all">EvaluateAllActivity</string>
+    <string name="title_activity_my_circle">MyCircleActivity</string>
+</resources>

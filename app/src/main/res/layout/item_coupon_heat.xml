@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/mine_list1"
+            android:layout_weight="1"
+            android:text="不使用优惠券"
+            android:textColor="@color/__picker_black_40"
+            android:textSize="@dimen/middle_size" />
+
+        <CheckBox
+            android:id="@+id/coupon_checkbox"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/coupon_checkbox"
+            android:button="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/xian" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="有"-->
+            <!--android:textColor="@color/__picker_black_40"-->
+            <!--android:textSize="@dimen/middle_size" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/coupon_heat_num"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="3"-->
+            <!--android:textColor="@color/color_f5359b"-->
+            <!--android:textSize="@dimen/big_size" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="个优惠券可用"-->
+            <!--android:textColor="@color/__picker_black_40"-->
+            <!--android:textSize="@dimen/middle_size" />-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="hvertical_spacing_sec">15dp</dimen>
+
+    <!--纵向间隔-->
+    <dimen name="horizontal_spacing_small">4dp</dimen>
+    <dimen name="horizontal_spacing_sec">20dp</dimen>
+    <!--横向间隔-->
+    <dimen name="horizontal_advanced_spacing">25dp</dimen>
+    <!--横向间隔-->
+    <dimen name="horizontal_normal_spacing">10dp</dimen>
+    <!--横向间隔-->
+    <dimen name="horizontal_spacing">10dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="supermin_size">8sp</dimen>
+    <dimen name="mini_size">10sp</dimen>
+    <dimen name="small_size">12sp</dimen>
+    <!--说明文字-->
+    <dimen name="middle_size">14sp</dimen>
+    <!--正文-->
+    <dimen name="big_size">16sp</dimen>
+    <!--多项标题||正文标题-->
+    <dimen name="large_size">18sp</dimen>
+    <!--大标题-->
+    <dimen name="super_size">23sp</dimen>
+    <!--超級大标题 -->
+    <dimen name="super_big_size">28sp</dimen>
+
+    <!-- 分割线的高度 -->
+    <dimen name="line_height">0.5dp</dimen>
+    <dimen name="xian">0.3dp</dimen>
+
+
+    <dimen name="gudieview_width">6dp</dimen>
+    <dimen name="gudieview_heigh">6dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16sp</dimen>
+    <dimen name="activity_vertical_margin">16sp</dimen>
+    <dimen name="text_size_calendar_date">12sp</dimen>
+    <dimen name="text_size_calendar_date_with_desc">10sp</dimen>
+</resources>

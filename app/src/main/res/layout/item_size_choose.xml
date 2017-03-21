@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="7dp"
+    android:orientation="vertical">
+  <!--叶晨：这是选择的条目布局-->
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/violet"
+        android:textSize="@dimen/small_size"
+        android:background="@drawable/round_shap"
+        />
+
+    <TextView
+        android:id="@+id/unselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/font19"
+        android:textSize="@dimen/small_size"
+        android:background="@drawable/gray_round_shap"
+        />
+  <!--<TextView-->
+      <!--android:id="@+id/out"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:text=""-->
+      <!--android:paddingLeft="5dp"-->
+      <!--android:paddingRight="5dp"-->
+      <!--android:paddingTop="2dp"-->
+      <!--android:paddingBottom="2dp"-->
+      <!--android:textColor="@color/font20"-->
+      <!--android:textSize="@dimen/small_size"-->
+      <!--android:background="@drawable/light_gray_round_shap"-->
+      <!--/>-->
+</LinearLayout>

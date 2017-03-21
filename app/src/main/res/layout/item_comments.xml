@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+            <ImageView
+                android:id="@+id/item_comments_head"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/head_iv"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+
+            <TextView
+                android:id="@+id/item_comments_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户昵称"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/middle_size"
+                android:textColor="@color/font19"/>
+            <TextView
+                android:id="@+id/item_comments_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4秒前"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/small_size"
+                android:textColor="@color/font20"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/item_comments_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/item_comments_name">
+                    <ImageView
+                        android:id="@+id/comments_satr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/star_icon"
+                        android:layout_gravity="center_vertical"
+                        />
+                <TextView
+                    android:id="@+id/item_comments_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="尺寸正好"
+                    android:textColor="@color/font20"
+                    android:textSize="@dimen/small_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/item_comments_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_size"
+                android:textColor="@color/font19"
+                android:layout_below="@+id/item_comments_ll"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

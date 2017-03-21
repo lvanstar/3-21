@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pay"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qiansong.msparis.app.wardrobe.activity.PayActivity">
+    <com.qiansong.msparis.app.commom.selfview.ETitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@mipmap/icon_applogo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/pay_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:text="￥  "
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textColor="@color/font19"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/font20"
+                android:text="日常服装租赁"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <include layout="@layout/line_thin"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <include layout="@layout/line_thin"/>
+    <LinearLayout
+        android:onClick="weixin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@mipmap/weixinzhifu"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="微信支付"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/font19"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:gravity="top"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:textColor="@color/font20"
+                android:text="推荐安装微信5.0及以上版本的用户使用"
+                android:textSize="9sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/select_weixin"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:padding="18dp"
+            android:src="@mipmap/select_0"/>
+
+
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <LinearLayout
+        android:onClick="zhifubao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@mipmap/zhifubaozhifu" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="支付宝"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/font19"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:gravity="top"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/font20"
+                android:text="推荐有支付宝账号的用户使用"
+                android:textSize="9sp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/select_zhifubao"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:padding="18dp"
+            android:src="@mipmap/select_1"/>
+
+
+    </LinearLayout>
+    <include layout="@layout/line_thin"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/topay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#393939"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:layout_marginBottom="50dp"
+        android:text="立即支付"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+</LinearLayout>

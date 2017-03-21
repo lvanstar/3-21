@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:id="@+id/item_details_choose_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/unselect"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="XL"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/font19"
+            android:textSize="@dimen/small_size"
+            android:gravity="center"
+            android:background="@drawable/gray_shap"
+            />
+
+        <TextView
+            android:id="@+id/select"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="XL"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_size"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/font19"
+            />
+
+        <TextView
+            android:id="@+id/out"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="XL"
+            android:textColor="@color/xian"
+            android:textSize="@dimen/small_size"
+            android:visibility="gone"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/gray_unselect_shap"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

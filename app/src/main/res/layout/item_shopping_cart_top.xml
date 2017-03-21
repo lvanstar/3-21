@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="6dp"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/yanjing"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/font19"
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:text="租赁日期：2017/1/12-2017/1/14"/>
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:gravity="center|end"
+            android:textSize="12sp"
+            android:textColor="@color/font19"
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:text="目的地:上海"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/shopping_car_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.1dp"
+        android:divider="@color/white"/>
+</LinearLayout>

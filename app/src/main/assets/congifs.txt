@@ -1,0 +1,159 @@
+{
+    "status": "ok",
+    "data": {
+        "brand": {
+            "updated_at": 1487591771,
+            "brands": [
+                {
+                    "id": "1",
+                    "name": "ALICE+OLIVIA",
+                    "code": "alice_olivia",
+                    "logo": "http://7xaw9u.com2.z0.glb.qiniucdn.com/sort-designer/alice_olivia.jpg?imageMogr2/strip",
+                    "pic": [
+                        "http://file.msparis.com/o_1ap75jbeq1eurg98017131c9ng.jpg"
+                    ],
+                    "sort": 1,
+                    "is_daily": 1,
+                    "is_dress": 0
+                }
+            ]
+        },
+        "product_filter": {
+            "updated_at": 1487591771,
+            "specifications": [
+                {
+                    "id":1,
+                    "name": "尺寸",
+                    "is_color":"0",
+                    "options": [
+                        {
+                            "id": "1",
+                            "name": "L",
+                            "value": null
+                        },
+                        {
+                            "id": "2",
+                            "name": "L",
+                            "value": null
+                        }
+                    ]
+
+                },
+
+
+                {
+                    "id":2,
+                    "name": "颜色",
+                    "is_color":"1",
+                    "options": [
+                        {
+                            "id": "1",
+                            "name": "红色",
+                            "value": "ff0000"
+                        },
+                        {
+                            "id": "2",
+                            "name": "蓝色",
+                            "value": "00ff00"
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                {
+                    "id":1,
+                    "name": "场合",
+                    "is_color":"0",
+                    "options": [
+                        {
+                            "id": "1",
+                            "name": "休闲"
+                        },
+                        {
+                            "id": "2",
+                            "name": "时尚"
+                        }
+                    ]
+                },
+                {
+                    "id":2,
+                    "name": "服装类型",
+                    "is_color":"0",
+                    "options": [
+                        {
+                            "id": "1",
+                            "name": "连衣裙"
+                        },
+                        {
+                            "id": "2",
+                            "name": "外套"
+                        }
+                    ]
+                }
+            ]
+        },
+        "filter_panel":{
+            "updated_at": 1487591771,
+            "daily_panel": ["date", "s1", "s2", "t1", "t2"],
+            "dress_panel": ["s1", "s2", "t1", "t2", "date"],
+            "daily_tags_panel": ["date", "s1"],
+            "dress_tags_panel": ["date", "s1"]
+        },
+        "sort":{
+            "updated_at": 1487591771,
+            "daily_sort" : [
+                {
+                    "key": "hot",
+                    "name": "热门"
+                },
+                {
+                    "key": "new",
+                    "name": "上新"
+                }
+            ],
+            "dress_sort" : [
+                {
+                    "key": "hot",
+                    "name": "热门",
+                    "select":true
+                },
+                {
+                    "key": "new",
+                    "name": "上新",
+                    "select":false
+                },
+                {
+                    "key": "price-ace",
+                    "name": "价格从低到高",
+                    "select":false
+                },
+                {
+                    "key": "price-desc",
+                    "name": "加个从高到低",
+                    "select":false
+                }
+            ]
+        },
+        "send_cities": {
+            "updated_at": 1487591771
+
+        },
+        "booking_cities": {
+            "updated_at": 1487591771
+
+        },
+        "user_size": {
+                    "udpated_at": 1487591771,
+                    "user_size": [
+                        {
+                            "id":1,
+                            "name":"XS"
+                        },
+                        {
+                            "id":2,
+                            "name":"S"
+                        }
+                    ]
+                }
+    }
+}

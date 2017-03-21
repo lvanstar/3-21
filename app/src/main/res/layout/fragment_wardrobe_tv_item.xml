@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <!--  选中状态 -->
+    <TextView
+        android:id="@+id/tv_violet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_textview_violet"
+        android:text="女神派"
+        android:textSize="12sp"
+        android:textColor="@color/violet" />
+    <!--  未选中 -->
+    <TextView
+        android:id="@+id/tv_grays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="女神派"
+        android:textColor="@color/gray"
+
+        />
+    <!--android:background="@drawable/tv_textview_gray"  灰色边框-->
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/tv_textview_violet"
+        />
+</LinearLayout>

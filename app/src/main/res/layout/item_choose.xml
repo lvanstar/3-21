@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="15dp">
+  <!--叶晨：这是选择的条目布局-->
+
+  <LinearLayout
+      android:id="@+id/item_choose_ll"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/violet"
+        android:textSize="@dimen/small_size"
+        android:gravity="center_vertical"
+        android:background="@drawable/round_shap"
+        />
+
+    <TextView
+        android:id="@+id/unselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textSize="@dimen/small_size"
+        android:textColor="@color/gray"
+        android:gravity="center_vertical"
+        />
+  </LinearLayout>
+
+</LinearLayout>

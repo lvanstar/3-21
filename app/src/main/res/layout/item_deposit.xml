@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--  押金的item -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deposit_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="押金类型：体验卡押金"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/middle_size" />
+
+            <TextView
+                android:id="@+id/deposit_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会员卡号：000000"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/middle_size" />
+
+            <TextView
+                android:id="@+id/deposit_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="押金金额：￥99.00"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/middle_size" />
+
+            <TextView
+                android:id="@+id/deposit_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="支付日期：2017-01-23"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/middle_size" />
+
+            <TextView
+                android:id="@+id/deposit_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="支付方式：微信支付"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/middle_size" />
+
+            <TextView
+                android:id="@+id/deposit_text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="支付单号：15111296292000000000"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/middle_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/deposit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tv_textview_black_bg"
+            android:gravity="center"
+            android:text="退押金"
+            android:textColor="@color/white"
+            android:textSize="@dimen/middle_size" />
+    </LinearLayout>
+</LinearLayout>

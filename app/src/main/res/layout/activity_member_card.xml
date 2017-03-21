@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.qiansong.msparis.app.commom.selfview.ETitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--横的线-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/member_details_image"
+                android:layout_marginTop="20dp"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/mine_card_yhq3" />
+
+            <TextView
+                android:id="@+id/member_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/big_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+                <GridView
+                    android:id="@+id/member_details_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <TextView
+                android:id="@+id/member_details_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="购买须知"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/middle_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/member_details_checkbox"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mine_checkbox"
+                    android:button="@null"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="我已经阅读并同意"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/middle_size" />
+
+                <TextView
+                    android:id="@+id/member_details_xieyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="《女神卡协议》"
+                    android:textColor="@color/__picker_black_40"
+                    android:textSize="@dimen/middle_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/member_details_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="合计： ￥318"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/big_size" />
+
+            <TextView
+                android:id="@+id/member_details_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/tv_textview_white_bg"
+                android:gravity="center"
+                android:text="立即购卡"
+                android:clickable="false"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/big_size" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/line" />
+    <!--  会员卡详情 -->
+</LinearLayout>

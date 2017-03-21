@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--  女神卡详情item -->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_details_image"
+        android:layout_marginTop="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/login_qq" />
+
+    <TextView
+        android:id="@+id/item_details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="特权名称"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/middle_size" />
+</LinearLayout>

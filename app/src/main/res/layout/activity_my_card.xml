@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <!-- 我的预约 -->
+    <com.qiansong.msparis.app.commom.selfview.ETitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--横的线-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/card_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@mipmap/mine_card_yhq3"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <LinearLayout
+                        android:id="@+id/card_stop"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/about" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <com.qiansong.msparis.app.commom.selfview.TXCirclePageIndicator
+                    android:id="@+id/card_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:alpha="80"
+                    android:visibility="visible"
+                    app:fillColor="@color/color_violet"
+                    app:pageColor="@color/xxlight_gray"
+                    app:radius="4dp"
+                    app:strokeWidth="0dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/my_card_jihuo"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/tv_textview_black_bg"
+                android:gravity="center"
+                android:text="激活此卡"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/my_card_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/my_card_shenji"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/tv_textview_black_bg"
+                    android:gravity="center"
+                    android:text="升级成VIP"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/big_size" />
+
+                <TextView
+                    android:id="@+id/my_card_xufei"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tv_textview_black_bg"
+                    android:gravity="center"
+                    android:text="续费"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/big_size" />
+
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="女神卡类型"
+                    android:textColor="@color/__picker_black_40"
+                    android:textSize="@dimen/big_size" />
+
+                <TextView
+                    android:id="@+id/my_card_leixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/middle_size" />
+
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="有效期至"
+                    android:textColor="@color/__picker_black_40"
+                    android:textSize="@dimen/big_size" />
+
+                <TextView
+                    android:id="@+id/my_card_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/middle_size" />
+
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="女神卡特权"
+                    android:textColor="@color/__picker_black_40"
+                    android:textSize="@dimen/big_size" />
+
+                <GridView
+                    android:id="@+id/my_card_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:id="@+id/my_card_mingxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="查看明细"
+                    android:textColor="@color/__picker_black_40"
+                    android:textSize="@dimen/big_size" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/mine_right" />
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <TextView
+                android:id="@+id/my_card_shiyon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="使用须知："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/middle_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/line" />
+
+</LinearLayout>

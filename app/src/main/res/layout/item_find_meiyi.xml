@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <!-- 美衣  -->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/find_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/placeholder_find" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tv_find_text_white"
+        android:gravity="center"
+        android:text="查看详情"
+        android:textColor="@color/__picker_black_40"
+        android:textSize="@dimen/middle_size" />
+</LinearLayout>

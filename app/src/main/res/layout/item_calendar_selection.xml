@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bugcatcher.calendar.view.StickyWidthLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:heightDivideWidthRatio="0.7">
+
+    <View
+        android:id="@+id/iv_oval"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_oval_black" />
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="31\n起租"
+        android:textColor="#fff"
+        android:textSize="10dp" />
+
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGreyMask"
+        android:visibility="visible" />
+</com.bugcatcher.calendar.view.StickyWidthLayout>

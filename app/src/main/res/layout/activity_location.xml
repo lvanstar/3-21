@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/home"
+    >
+
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/title_bg">
+        <include
+            layout="@layout/layout_back">
+        </include>
+        <TextView
+            android:id="@+id/location_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择城市—上海"
+            android:textColor="@color/font19"
+            android:textSize="@dimen/big_size" />
+    </RelativeLayout>
+    <include
+        layout="@layout/line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <RelativeLayout
+                android:id="@+id/location_here"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/location_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="上海"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/location_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="GPS定位"
+                    android:layout_toRightOf="@+id/location_address"
+                    android:textColor="@color/font20"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/xian"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <ListView
+                    android:id="@+id/country_lvcountry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:divider="@null" />
+                <com.qiansong.msparis.app.homepage.view.sortlistview.SideBar
+                    android:id="@+id/sidrbar"
+                    android:layout_width="20dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

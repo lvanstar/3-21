@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <!--地址显示-->
+    <com.qiansong.msparis.app.commom.selfview.ETitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--横的线-->
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/band_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="绑定手机号码！为了提供更好的服务及账号安全，请绑定手机号后进行操作"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/middle_size" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+
+        <EditText
+            android:id="@+id/band_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="输入手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingBottom="5dp"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/big_size" />
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/band_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="输入验证码"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/big_size" />
+
+                <include layout="@layout/line" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/band_code_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/tv_textview_white_bg"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/small_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/band_Voice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收不到短信？"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/band_Voice_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用语音验证码"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/small_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/band_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/tv_textview_white_bg"
+            android:gravity="center"
+            android:text="绑定"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/big_size" />
+
+
+    </LinearLayout>
+</LinearLayout>

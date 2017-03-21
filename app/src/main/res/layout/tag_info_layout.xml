@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:text="起租日期"
+            android:textSize="@dimen/middle_size"
+            android:layout_marginLeft="10dp"
+            android:textColor="#999999" />
+        <CheckBox
+            android:id="@+id/wardrobe_top_today"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="明天1月13日"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/small_size"
+            android:button="@null"
+            android:background="@drawable/checkbox_select_bg"
+            android:textColor="@drawable/checkbox_select_tv" />
+
+        <CheckBox
+            android:id="@+id/wardrobe_top_tomorrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="后天1月14日"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textSize="@dimen/small_size"
+
+            android:button="@null"
+            android:background="@drawable/checkbox_select_bg"
+            android:textColor="@drawable/checkbox_select_tv" />
+
+        <CheckBox
+            android:id="@+id/wardrobe_top_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="更多日期 >"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/small_size"
+            android:button="@null"
+            android:background="@drawable/checkbox_select_bg"
+            android:textColor="@drawable/checkbox_select_tv" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/line"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/size_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <include
+        layout="@layout/line"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</LinearLayout>

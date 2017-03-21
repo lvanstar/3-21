@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--  续费 item-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/item_renew_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="年度普通女神卡"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/middle_size" />
+
+            <TextView
+                android:id="@+id/item_renew_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:text="12个月，每月518元"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/middle_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_renew_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="￥ 999"
+            android:textColor="@color/color_f5359b"
+            android:textSize="@dimen/middle_size" />
+
+        <ImageView
+            android:id="@+id/item_renew_check"
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:layout_height="20dp"
+            android:src="@drawable/mine_checkbox_false" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:background="@color/xian" />
+</LinearLayout>

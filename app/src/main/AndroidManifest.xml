@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qiansong.msparis">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGSE" />
+    <!-- SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 第三方登录 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".app.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_applogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 朝朝的key -->
+        <!--<meta-data-->
+            <!--android:name="com.amap.api.v2.apikey"-->
+            <!--android:value="9d35eccb9fdd3f715791103016d681aa" />-->
+        <!-- 叶晨的key -->
+       <meta-data
+         android:name="com.amap.api.v2.apikey"
+         android:value="dd4e49af30007fb4f0d77b8c80147f59" />
+
+        <activity android:name=".app.commom.activity.MainActivity" />
+
+        <!-- 首页 -->
+        <activity
+            android:name=".app.commom.activity.AppStartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".app.commom.receivers.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.qiansong.msparis" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 引导页 -->
+        <activity
+            android:name=".app.commom.activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <!-- 商品详情页 -->
+        <activity
+            android:name=".app.wardrobe.activity.ProductDetailsActivity"
+            android:label="@string/title_activity_product_details" />
+        <!-- 评论列表 -->
+        <activity
+            android:name=".app.wardrobe.activity.CommentsListActivity"
+            android:label="@string/title_activity_product_details" />
+        <!-- 配送目的地 -->
+        <activity
+            android:name=".app.wardrobe.activity.LocationActivity"
+            android:label="@string/title_activity_product_details" />
+        <!-- 晒图 -->
+        <activity
+            android:name=".app.find.activity.SlideShowActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 添加美衣 -->
+        <activity
+            android:name=".app.find.activity.AddClothesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.homepage.activity.BrandDetailsActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- 登录页面 -->
+        <activity
+            android:name=".app.mine.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <!-- 设置页面 -->
+        <activity
+            android:name=".app.mine.activity.SetUpActivity"
+            android:label="@string/title_activity_set_up" />
+        <!-- 地址页面 -->
+        <activity
+            android:name=".app.mine.activity.AddressActivity"
+            android:label="@string/title_activity_address" />
+        <!-- 修改或者添加地址 -->
+        <activity
+            android:name=".app.mine.activity.UpdateAddressActivity"
+            android:label="@string/title_activity_update_address" />
+        <!-- 获取旧手机号码 -->
+        <activity
+            android:name=".app.mine.activity.VerificationOldPhoneActivity"
+            android:label="@string/title_activity_verification_old_phone" />
+        <!-- 更改手机号码 -->
+        <activity
+            android:name=".app.mine.activity.ReplacePhoneActivity"
+            android:label="@string/title_activity_replace_phone" />
+        <!-- 搜索 -->
+        <activity
+            android:name=".app.homepage.activity.SearchActivity"
+            android:label="@string/title_activity_search" />
+        <!-- 大图 -->
+        <activity
+            android:name=".app.commom.selfview.showimage.ImagePagerActivity"
+            android:label="@string/title_activity_search" />
+        <!-- 绑定手机号 -->
+        <activity
+            android:name=".app.mine.activity.BinDingPhoneNumActivity"
+            android:label="@string/title_activity_bin_ding_phone_num" />
+        <!-- 用户信息 -->
+        <activity
+            android:name=".app.mine.activity.UserMessageActivity"
+            android:label="@string/title_activity_user_message"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 预约试穿 -->
+        <activity
+            android:name=".app.fulldress.activity.AppointmentActivity"
+            android:label="@string/title_activity_appointment" />
+        <!-- 预约记录 -->
+        <activity
+            android:name=".app.fulldress.activity.AppointmentRecordActivity"
+            android:label="@string/title_activity_appointment_record" />
+        <!-- 预约时间 -->
+        <activity
+            android:name=".app.fulldress.activity.AppointmentTimeActivity"
+            android:label="@string/title_activity_appointment_time" />
+        <!-- 尺寸详情 -->
+        <activity
+            android:name=".app.wardrobe.activity.SizeActivity"
+            android:label="@string/title_activity_appointment_time" />
+        <!-- 标签筛选详情 -->
+        <activity
+            android:name=".app.fulldress.activity.TagInfoActivity"
+            android:label="@string/title_activity_appointment_time" />
+        <activity
+            android:name=".app.fulldress.activity.AppointmentRecordDetailsActivity"
+            android:label="@string/title_activity_appointment_record_details" />
+        <!-- 礼服详情 -->
+        <activity
+            android:name=".app.fulldress.activity.FullDressActivity"
+            android:label="@string/title_activity_search" />
+        <activity android:name=".app.wardrobe.activity.ShoppingBagActivity" />
+        <!-- 用户信息 -->
+        <activity
+            android:name=".app.mine.activity.UserActivity"
+            android:label="@string/title_activity_user"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 会员中心 -->
+        <activity
+            android:name=".app.mine.activity.MemberActivity"
+            android:label="@string/title_activity_member" />
+        <!-- 积分明细 -->
+        <activity
+            android:name=".app.mine.activity.IntegralActivity"
+            android:label="@string/title_activity_integral" />
+        <!-- 签到 -->
+        <activity
+            android:name=".app.mine.activity.SignActivity"
+            android:label="@string/title_activity_sign" />
+        <!-- 购买会员卡 -->
+        <activity
+            android:name=".app.mine.activity.MembershipCardActivity"
+            android:label="@string/title_activity_membership_card" />
+        <!-- 会员卡详情 -->
+        <activity
+            android:name=".app.mine.activity.MemberCardDetailsActivity"
+            android:label="@string/title_activity_member_card" />
+        <!-- 支付会员卡 -->
+        <activity
+            android:name=".app.mine.activity.PayCardActivity"
+            android:label="@string/title_activity_pay_order" />
+        <!-- 支付结果 -->
+        <activity
+            android:name=".app.mine.activity.PayResultActivity"
+            android:label="@string/title_activity_pay_result" />
+        <!-- 优惠券列表 -->
+        <activity
+            android:name=".app.mine.activity.CouponActivity"
+            android:label="@string/title_activity_coupon" />
+        <!-- 历史优惠券列表 -->
+        <activity
+            android:name=".app.mine.activity.OldCouponActivity"
+            android:label="@string/title_activity_coupon" />
+        <!-- 我的押金 -->
+        <activity
+            android:name=".app.mine.activity.DepositActivity"
+            android:label="@string/title_activity_deposit" />
+        <!-- 我的钱包 -->
+        <activity
+            android:name=".app.mine.activity.MyWalletActivity"
+            android:label="@string/title_activity_my_wallet" />
+        <!-- 我的女神卡 -->
+        <activity
+            android:name=".app.mine.activity.MyCardActivity"
+            android:label="@string/title_activity_my_card" />
+        <!-- 确认订单 -->
+        <activity android:name=".app.wardrobe.activity.MakeOrderActivity" />
+        <!-- 支付 -->
+        <activity android:name=".app.wardrobe.activity.PayActivity" />
+        <!-- 支付结果 -->
+        <activity
+            android:name=".app.wardrobe.activity.PaymentResultsActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- 我的衣橱 -->
+        <activity android:name=".app.mine.activity.MyWardrobeActivity" />
+        <!-- 购买卡 确认订单页 -->
+        <activity android:name=".app.mine.activity.ConfirmCardOrderActivity" />
+        <!-- 我的订单 -->
+        <activity android:name=".app.mine.activity.MyOrderActivity" />
+        <!-- 还依记录 -->
+        <activity android:name=".app.mine.activity.ClothingRecordActivity" />
+        <!-- 还衣记录详情 -->
+        <activity android:name=".app.mine.activity.ClothingRecordDetailsActivity" />
+        <!-- 二维码 -->
+        <activity android:name=".app.mine.activity.EScanActiviy" />
+        <!-- 编辑快递信息 -->
+        <activity android:name=".app.mine.activity.EditWaybillNumberActivity" />
+        <!-- 物流详情 -->
+        <activity
+            android:name=".app.mine.activity.LogisticsActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 我的订单详情 -->
+        <activity
+            android:name=".app.mine.activity.MyOrderDetailsActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!-- 一键还衣 -->
+        <activity android:name=".app.mine.activity.EasyReturnClothesActivity" />
+        <!-- 还衣结果 -->
+        <activity android:name=".app.mine.activity.ReturnResultActivity" />
+        <activity android:name=".app.mine.activity.EvaluateActivity" />
+        <activity android:name=".app.mine.activity.ReletMakeOrderActivity" />
+        <activity android:name=".app.mine.activity.WishListActivity" />
+
+        <!-- 添加SharedSDK  activity信息 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1105380677" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 我的女神卡- 查看明细 -->
+        <activity
+            android:name=".app.mine.activity.UseDetailsActivity"
+            android:label="@string/title_activity_use_details" />
+        <!-- web -->
+        <activity android:name=".app.commom.activity.WebViewActivity" />
+        <!-- 我的订阅(品牌) -->
+        <activity android:name=".app.mine.activity.MySubscribeActivity" />
+        <!-- 邀请有奖 -->
+        <activity android:name=".app.mine.activity.ToInviteActivity" />
+        <!-- 实名认证 -->
+        <activity
+            android:name=".app.mine.activity.CertificationActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- 选择优惠券 -->
+        <activity
+            android:name=".app.mine.activity.SeleteCouponActivity"
+            android:label="@string/title_activity_selete_coupon" />
+        <activity android:name=".app.fulldress.activity.MakeOrderFulldressActivity" />
+        <!-- 手动输入运单编号 -->
+        <activity
+            android:name=".app.mine.activity.ManualInputActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".app.mine.activity.RenewCardActivity"
+            android:label="@string/title_activity_renew_card" />
+        <!-- 发票 -->
+        <activity
+            android:name=".app.mine.activity.InvoiceActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".app.mine.activity.MakeInvoiceActivity" />
+        <activity
+            android:name=".app.mine.activity.AllPrivilegesActivity"
+            android:label="@string/title_activity_all_privileges" />
+
+        <!-- 开票记录 -->
+        <activity
+            android:name=".app.mine.activity.InvoiceRecordsActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".app.find.activity.CircleFriendsActivity"
+            android:label="@string/title_activity_circle_friends" />
+        <activity
+            android:name=".app.find.activity.EvaluateAllActivity"
+            android:label="@string/title_activity_evaluate_all" />
+        <activity
+            android:name=".app.find.activity.MyCircleActivity"
+            android:label="@string/title_activity_my_circle" />
+
+        <!-- 消息中心 -->
+        <activity
+            android:name=".app.homepage.activity.MessageCenterActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!-- 消息列表 -->
+        <activity
+            android:name=".app.homepage.activity.MessageListActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".app.find.activity.PoiActivity" />
+        android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".app.commom.util.iosdialog.IosDialogActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!-- 微信广播 -->
+        <receiver android:name=".app.commom.util.PayHelp$BroadCast">
+            <intent-filter android:priority="10">
+                <action android:name="com.qiansong.weixin_pay" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".app.mine.activity.ReturnMakeOrderActivity"></activity>
+    </application>
+
+</manifest>

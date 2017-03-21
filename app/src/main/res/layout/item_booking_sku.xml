@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp">
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="180dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_url"
+            android:layout_width="130dp"
+            android:layout_height="180dp" />
+        <ImageView
+            android:id="@+id/type_id"
+            android:visibility="gone"
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/vip"/>
+        <ImageView
+            android:id="@+id/status"
+            android:visibility="gone"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:src="@mipmap/weifahuo"/>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/product_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/font20"
+        android:text="品牌名称"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/specification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/font20"
+        android:text="尺码"
+        android:textSize="11sp"
+        />
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/font20"
+        android:text="市场价￥2000"
+        android:textSize="13sp"
+        />
+</LinearLayout>

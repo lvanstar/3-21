@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!--预定中-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@mipmap/mine_bage" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/font19"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="租赁日期： - "/>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"
+            android:background="@drawable/ysf_audio_cancel_record_red_bg"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:text="一键还衣"/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:focusable="false"
+        android:layout_centerVertical="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/about"/>
+        <TextView
+            android:id="@+id/bag_barcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:textColor="@color/font20"
+            android:text="请连同环保袋一同归还，编号："
+            android:textSize="11sp"
+            />
+    </LinearLayout>
+</LinearLayout>

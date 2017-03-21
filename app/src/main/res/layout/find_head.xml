@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/find_head_back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ease_common_tab_bg"
+            android:clickable="true"
+            android:minWidth="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/mine_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/find_head_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ease_common_tab_bg"
+            android:clickable="true"
+            android:minWidth="50dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:background="@mipmap/share" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/find_head_start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ease_common_tab_bg"
+            android:clickable="true"
+            android:minWidth="50dp">
+
+            <ImageView
+                android:id="@+id/find_head_start_image"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:background="@mipmap/icon_no" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/find_head_start_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textSize="@dimen/small_size"
+            android:textColor="@color/violet" />
+    </LinearLayout>
+</LinearLayout>

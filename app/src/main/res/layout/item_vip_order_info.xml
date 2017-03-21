@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/vip_order_info_iv"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            app:actualImageScaleType="fitCenter"
+            app:placeholderImage="@mipmap/placeholder_banner"
+            app:placeholderImageScaleType="fitCenter"/>
+        <TextView
+            android:id="@+id/vip_order_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[购买]女神卡名称"
+            android:textColor="@color/font19"
+            android:textSize="@dimen/middle_size"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/vip_order_info_iv"
+            android:layout_toRightOf="@+id/vip_order_info_iv"/>
+        <TextView
+            android:id="@+id/vip_order_info_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥200.00"
+            android:textColor="@color/color_violet"
+            android:textSize="@dimen/middle_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/vip_order_info_name"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

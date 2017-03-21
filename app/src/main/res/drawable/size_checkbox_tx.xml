@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- checked -->
+	<item android:color="@color/white"  android:state_checked="true" />
+	<!-- default -->
+	<item android:color="@color/__picker_black_40" android:state_checked="false"/>
+
+</selector>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <!-- 搜索显示  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/left_layout"
+            android:layout_width="40dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/ease_common_tab_bg"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/mine_back"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/search_search" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/search_line" />
+
+        <EditText
+            android:id="@+id/search_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="关键字"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@color/__picker_black_40"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/small_size" />
+
+        <RelativeLayout
+            android:id="@+id/search_detale"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ease_common_tab_bg"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/search_delete" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/search_close"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ease_common_tab_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="取消"
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/middle_size" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

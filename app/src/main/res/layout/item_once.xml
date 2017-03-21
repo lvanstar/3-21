@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="180dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_url"
+            android:layout_width="130dp"
+            android:layout_height="180dp" />
+        <ImageView
+            android:id="@+id/type_id"
+            android:visibility="gone"
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/vip"/>
+        <ImageView
+            android:id="@+id/status"
+            android:visibility="gone"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:src="@mipmap/weifahuo"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/market_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+        android:gravity="center"
+        android:textColor="@color/font20"
+        android:text="折  购买价"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="#333333"
+        android:textSize="10sp"
+        android:text="购买"/>
+</LinearLayout>

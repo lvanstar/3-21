@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.qiansong.msparis"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a' // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : "com.qiansong.msparis",
+                JPUSH_APPKEY : "940a9239782701bb533d148c",
+                JPUSH_CHANNEL : "developer-default",]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+
+        }
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/httpcore-4.4.4.jar')
+    //------ retrofit+okhttp 网络请求 ---------
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+    //------ 图片处理框架 ---------
+    compile 'com.facebook.fresco:fresco:0.8.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    //------ 控件集合工具 ---------
+    compile 'com.jakewharton:butterknife:6.1.0'
+    //------ 数据库处理框架 ---------
+    compile 'de.greenrobot:greendao:2.0.0'
+    //-----------------------
+    //------ 图片轮播  --------
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    //------ 选择图片  --------
+    compile 'me.iwf.photopicker:PhotoPicker:0.9.5@aar'
+    //------- 地址选择器 ------
+    compile 'com.contrarywind:Android-PickerView:3.0.7'
+    //compile 'com.weigan:loopView:0.1.1'
+    //    compile 'com.prolificinteractive:material-calendarview:1.4.2'
+    //------- 侧边栏字母引导滑动 ------
+    //    compile 'com.bigkoo:quicksidebar:1.0.3'
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3@aar'
+    //------大图显示 ------
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    //-----  客服  -------
+    compile 'com.qiyukf.unicorn:unicorn:3.3.0'
+    //二维码
+    compile files('libs/zxing.jar')
+    //动态预约
+    compile 'com.github.yeyuqingchen:yc_pick_time:-SNAPSHOT'
+    compile files('libs/ShareSDK-QQ-2.8.1.jar')
+    compile files('libs/MobCommons-2017.0216.1054.jar')
+    compile files('libs/MobTools-2017.0216.1054.jar')
+    compile files('libs/ShareSDK-Core-2.8.1.jar')
+    compile files('libs/ShareSDK-QQ-2.8.1.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.8.1.jar')
+    //recyclerview
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    // ------------   上传头像的图片选择------------
+    compile 'com.yancy.imageselector:imageselector:1.3.3'
+    //压缩图片
+    compile 'id.zelory:compressor:1.0.4'
+    //RxAndroid
+    compile 'io.reactivex:rxandroid:1.2.1'
+    //    compile 'com.ldoublem.thumbUplib:ThumbUplib:0.5'
+    //高德地图 定位
+    compile files('libs/AMap_Location_V3.3.0_20170118.jar')
+    //xrecyclerview
+    compile 'com.jcodecraeer:xrecyclerview:1.3.2'
+    //design
+    compile 'com.android.support:design:23.4.0'
+    //微信支付
+    compile files('libs/libammsdk.jar')
+    //极光推送
+    compile 'cn.jiguang.sdk:jpush:3.0.3'
+    compile 'cn.jiguang.sdk:jcore:1.1.1'
+    //支付宝支付
+    compile files('libs/alipaySdk-20161222.jar')
+    //poi
+    compile files('libs/AMap3DMap_5.0.0_AMapSearch_5.0.0_20170311.jar')
+    //multidex
+    compile 'com.android.support:multidex:1.0.0'
+}

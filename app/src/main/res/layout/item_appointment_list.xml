@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+    <!--  预约时间列表选择日期 -->
+
+
+    <TextView
+        android:id="@+id/item_appointment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="AM"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/big_size" />
+
+    <GridView
+        android:id="@+id/item_appointment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:numColumns="4"
+        android:visibility="visible" />
+</LinearLayout>

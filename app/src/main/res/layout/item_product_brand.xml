@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sku_img"
+            android:layout_width="180dp"
+            android:layout_height="260dp" />
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/sku_img"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="3dp"-->
+        <!--android:background="#cecece"/>-->
+        <ImageView
+            android:id="@+id/zan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/font19"
+        android:textSize="@dimen/small_size"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/font20"
+        android:textSize="@dimen/mini_size"
+        android:layout_marginLeft="5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:textColor="@color/font19"
+            android:textSize="@dimen/small_size"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bottomcolor">#151515</color>
+    <color name="colorGreyMask">#AAFFFFFF</color>
+    <color name="colorPurple">#ff8a2293</color>
+    <color name="colorRed">#ffea0022</color>
+    <color name="colorBlack">#000</color>
+    <color name="Red">#c03838</color>
+    <color name="RedDark">#df9b9b</color>
+
+    <!-- 通用色 -->
+    <color name="transparent">#00000000</color>
+    <color name="guidecolor">#bf000000</color>
+    <color name="light_gray">#d7d5d1</color>
+    <color name="xian">#ececeb</color>
+    <color name="white">#ffffff</color>
+    <color name="font19">#2e2e2e</color>
+    <color name="font20">#8b8a8a</color>
+    <color name="xxlight_gray">#EBEBEB</color>
+    <color name="font21">#f4f4f4</color>
+    <color name="font22">#eeeeee</color>
+    <color name="font23">#7e7e7e</color>
+    <color name="font24">#ea5514</color>
+    <color name="font25">#e9d7f7</color>
+    <color name="font26">#85689b</color>
+    <!-- 项目相关色 -->
+    <color name="color_f5359b">#f5359b</color>
+    <color name="color_f964b3">#f964b3</color>
+    <color name="color_violet">#DB70DB</color>
+    <color name="top_bar_normal_bg">#101010</color>
+    <color name="appointment">#FF7006</color>
+    <color name="deep_gray">#394257</color>
+    <color name="bg_gray">#e1e1e1</color>
+    <color name="title_bg">#f9f9f9</color>
+    <color name="__picker_black_40">#282828</color>
+
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+
+
+    <!--紫色-->
+    <color name="violet">#CBB6D8</color>
+    <!--灰色-->
+    <color name="gray">#8d8e94</color>
+    <!--透明-->
+    <color name="mp_touming">#00000000</color>
+    <!--半透明-->
+    <color name="mp_bantouming">#80000000</color>
+</resources>

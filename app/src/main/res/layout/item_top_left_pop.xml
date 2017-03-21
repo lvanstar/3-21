@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/item_top_left_pop_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查韦斯"
+            android:textColor="@color/font23"
+            android:textSize="@dimen/big_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:id="@+id/item_top_left_pop_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wardrobe_select"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+        <View
+            android:id="@+id/top_left_pop_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0.3dp"
+            android:background="@color/font23"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

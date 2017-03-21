@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/item_find_headIv"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:roundAsCircle="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    fresco:placeholderImage="@mipmap/head_iv"
+                    fresco:placeholderImageScaleType="fitCenter" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp">
+                    <TextView
+                        android:id="@+id/item_find_nameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户名称"
+                        android:textSize="@dimen/middle_size"
+                        android:textColor="@color/font19"
+                        android:layout_marginLeft="3dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/item_find_nameTv">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/find_collect"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_vertical"
+                            />
+                        <TextView
+                            android:id="@+id/item_find_collectTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="99+"
+                            android:textColor="@color/font20"
+                            android:textSize="@dimen/small_size"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="center_vertical"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/find_comment"
+                            android:layout_marginLeft="8dp"
+                            android:layout_gravity="center_vertical"
+                            />
+                        <TextView
+                            android:id="@+id/item_find_commentTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="99+"
+                            android:textColor="@color/font20"
+                            android:textSize="@dimen/small_size"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="center_vertical"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginRight="25dp">
+
+                <TextView
+                    android:id="@+id/item_find_attionTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关注"
+                    android:textColor="@color/color_violet"
+                    android:textSize="@dimen/middle_size"
+                    android:gravity="center"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/violet_button_shape"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/item_find_contentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="上海普陀区长征镇怒江北路598号4楼上海普陀区长征镇怒江北路598号4楼上海普陀区长征镇怒江北路598号4楼上海普陀区长征镇怒江北路598号4楼598号4楼598号4楼"/>
+
+        <com.qiansong.msparis.app.find.view.MultiImageView
+            android:id="@+id/item_find_multiImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"/>
+
+        <include
+            layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="25dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/find_address"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                />
+            <TextView
+                android:id="@+id/item_find_timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1分钟前"
+                android:textSize="@dimen/small_size"
+                android:textColor="@color/font20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"/>
+            <TextView
+                android:id="@+id/item_find_addressTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上海 大连路"
+                android:textSize="@dimen/small_size"
+                android:textColor="@color/font20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

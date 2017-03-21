@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_return_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qiansong.msparis.app.mine.activity.ReturnResultActivity">
+    <com.qiansong.msparis.app.commom.selfview.ETitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/line"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="23dp"
+        android:src="@mipmap/pay_sucess"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="还衣结果"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/font19"/>
+    <View  android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/xian">
+        <!--左边有空缺的线-->
+    </View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="快递小哥将飞速上门取件，请保持手机畅通，当取件完成后，即可预定新的服装，开始新的换衣旅程"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:padding="10dp"
+        android:textColor="@color/font19"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <View  android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/xian"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评价租赁的服装可获得一定数量的积分"
+            android:gravity="center"
+            android:textSize="7sp"
+            android:padding="2dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/font19"/>
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/mine_list2_2"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/to_evaluate"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:text="立即评价"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="17sp"
+        android:padding="0dp"
+        android:background="@color/font19"
+        android:textColor="@color/white"/>
+</LinearLayout>

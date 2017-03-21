@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/item_shopping_bag_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/font19">
+        <LinearLayout
+            android:id="@+id/item_shopping_bag_Ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/item_shopping_bag_name_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIP购物袋1"
+                android:textSize="@dimen/big_size"
+                android:textColor="@color/font24"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/item_shopping_bag_time_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击后需要指定起止日期"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_size"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_shopping_bag_number_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_shopping_bag_Ll"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/font24"
+            android:text="1/3"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:textSize="@dimen/small_size"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

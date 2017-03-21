@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--  兑换女神卡 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <EditText
+            android:id="@+id/card_exchange_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:background="@null"
+            android:textColorHint="@color/gray"
+            android:hint="请输入您获得的兑换码"
+            android:textColor="@color/__picker_black_40"
+            android:textSize="@dimen/big_size" />
+
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/xian" />
+
+        <TextView
+            android:id="@+id/card_exchange_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/tv_textview_white_bg"
+            android:gravity="center"
+            android:text="立即兑换"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/big_size" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--  优惠券的item -->
+
+
+    <!--可以使用的优惠券-->
+    <LinearLayout
+        android:id="@+id/coupon_ly_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/mine_yuq_2"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/selete_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@mipmap/selete_coupon_check" />
+
+            <TextView
+                android:id="@+id/selete_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/selete_check"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/super_big_size" />
+
+            <TextView
+                android:id="@+id/selete_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/selete_title"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/selete_title"
+                android:gravity="bottom"
+                android:text="元"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coupon_title1_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠券名称"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_size" />
+
+            <TextView
+                android:id="@+id/coupon_title2_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● 限制条件限制条件限制条件"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_size" />
+
+            <TextView
+                android:id="@+id/coupon_title3_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● 满200元使用"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_size" />
+
+            <TextView
+                android:id="@+id/coupon_title4_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● 有效期：2017-12-28"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_size" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

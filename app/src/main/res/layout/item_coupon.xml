@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--  优惠券的item -->
+
+
+    <!--可以使用的优惠券-->
+    <LinearLayout
+        android:id="@+id/coupon_ly_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/mine_yuq_1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/coupon_title_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="￥10元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/super_big_size" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coupon_title1_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠券名称"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_size" />
+
+            <TextView
+                android:id="@+id/coupon_title2_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● 限制条件限制条件限制条件"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_size" />
+
+            <TextView
+                android:id="@+id/coupon_title3_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● 满200元使用"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_size" />
+
+            <TextView
+                android:id="@+id/coupon_title4_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● 有效期：2017-12-28"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_size" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
